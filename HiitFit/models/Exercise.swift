@@ -7,14 +7,13 @@
 
 import Foundation
 
-enum GYM_EXERCISE: CaseIterable {
-  case squat
-  case legPress
-  case uprightRow
-  case benchPress
-  case pushups
+enum GYM_EXERCISE: String,CaseIterable {
+  case squat = "Squat"
+  case legPress = "Leg press"
+  case uprightRow = "Upright Row"
+  case benchPress = "Bench press"
+  case pushups = "Pushups"
 }
-
 
 struct Exercise {
   let id = UUID()
