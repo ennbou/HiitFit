@@ -11,7 +11,7 @@ import SwiftUI
 struct HiitFitApp: App {
     var body: some Scene {
         WindowGroup {
-           HomeScreen()
+           ContentView()
         }
     }
 }

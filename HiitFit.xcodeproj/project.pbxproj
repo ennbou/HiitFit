@@ -10,6 +10,8 @@
 		D96F82002B30A4C60087BA31 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96F81FF2B30A4C60087BA31 /* Exercise.swift */; };
 		D96F82022B30A96C0087BA31 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96F82012B30A96C0087BA31 /* HeaderView.swift */; };
 		D96F82042B30ABA70087BA31 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96F82032B30ABA70087BA31 /* HomeScreen.swift */; };
+		D96F82062B30C92D0087BA31 /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96F82052B30C92D0087BA31 /* ExerciseView.swift */; };
+		D96F82092B30E8090087BA31 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96F82082B30E8090087BA31 /* ContentView.swift */; };
 		D9823C862B20EC3900FB1A2B /* HiitFitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9823C852B20EC3900FB1A2B /* HiitFitApp.swift */; };
 		D9823C8A2B20EC3B00FB1A2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9823C892B20EC3B00FB1A2B /* Assets.xcassets */; };
 		D9823C8D2B20EC3B00FB1A2B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9823C8C2B20EC3B00FB1A2B /* Preview Assets.xcassets */; };
@@ -19,6 +21,8 @@
 		D96F81FF2B30A4C60087BA31 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		D96F82012B30A96C0087BA31 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		D96F82032B30ABA70087BA31 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		D96F82052B30C92D0087BA31 /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
+		D96F82082B30E8090087BA31 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D9823C822B20EC3900FB1A2B /* HiitFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiitFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9823C852B20EC3900FB1A2B /* HiitFitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiitFitApp.swift; sourceTree = "<group>"; };
 		D9823C892B20EC3B00FB1A2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -36,6 +40,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D96F82072B30E7AC0087BA31 /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				D96F82052B30C92D0087BA31 /* ExerciseView.swift */,
+				D96F82032B30ABA70087BA31 /* HomeScreen.swift */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
 		D9823C792B20EC3900FB1A2B = {
 			isa = PBXGroup;
 			children = (
@@ -56,7 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				D9823C962B20ECB900FB1A2B /* extensions */,
-				D9823C952B20ECB300FB1A2B /* commons */,
 				D9823C942B20ECAE00FB1A2B /* models */,
 				D9823C932B20ECA800FB1A2B /* views */,
 				D9823C852B20EC3900FB1A2B /* HiitFitApp.swift */,
@@ -77,8 +89,9 @@
 		D9823C932B20ECA800FB1A2B /* views */ = {
 			isa = PBXGroup;
 			children = (
-				D96F82012B30A96C0087BA31 /* HeaderView.swift */,
-				D96F82032B30ABA70087BA31 /* HomeScreen.swift */,
+				D9823C952B20ECB300FB1A2B /* commons */,
+				D96F82072B30E7AC0087BA31 /* screens */,
+				D96F82082B30E8090087BA31 /* ContentView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -94,6 +107,7 @@
 		D9823C952B20ECB300FB1A2B /* commons */ = {
 			isa = PBXGroup;
 			children = (
+				D96F82012B30A96C0087BA31 /* HeaderView.swift */,
 			);
 			path = commons;
 			sourceTree = "<group>";
@@ -177,8 +191,10 @@
 			files = (
 				D96F82042B30ABA70087BA31 /* HomeScreen.swift in Sources */,
 				D96F82002B30A4C60087BA31 /* Exercise.swift in Sources */,
+				D96F82092B30E8090087BA31 /* ContentView.swift in Sources */,
 				D9823C862B20EC3900FB1A2B /* HiitFitApp.swift in Sources */,
 				D96F82022B30A96C0087BA31 /* HeaderView.swift in Sources */,
+				D96F82062B30C92D0087BA31 /* ExerciseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

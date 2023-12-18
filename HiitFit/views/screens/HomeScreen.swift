@@ -9,14 +9,11 @@ import SwiftUI
 
 struct HomeScreen: View {
   
-  @State var selectedTab = 0
+  @Binding var selectedTab: Int
   @State var historyIsPresented = false
   
   var body: some View {
-    VStack{
-      
-      HeaderView(title: "Welcome", numberOfExercises: Exercise.exercises.count, selectedTab: $selectedTab)
-      
+    VStack{      
       Spacer()
       
       AsyncImage(url: URL(string: "https://img.grouponcdn.com/iam/2LtxfBqrnmYk8VvpHpjNNh5Quxrp/2L-2048x1229/v1/c870x524.webp")) { image in
@@ -37,7 +34,9 @@ struct HomeScreen: View {
         .font(.caption)
         .padding(.bottom)
       
-      Button(action: {}){
+      Button(action: {
+        selectedTab = 1
+      }){
         Text("Get Start")
           .font(.title)
       }
@@ -63,6 +62,6 @@ struct HomeScreen: View {
 
 struct HomeScreen_Previews: PreviewProvider {
   static var previews: some View {
-    HomeScreen()
+    HomeScreen(selectedTab: .constant(1))
   }
 }

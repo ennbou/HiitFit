@@ -9,21 +9,22 @@ import SwiftUI
 
 struct HeaderView: View {
 
-  let title: String
-  let numberOfExercises: Int
+  let numberOfExercises = Exercise.exercises.count
 
   @Binding var selectedTab: Int
   
   var body: some View {
     VStack{
       
-      Text(title)
+      Text(Exercise.exercises[selectedTab-1].name.rawValue)
         .fontWeight(.bold)
         .font(.title)
       
       HStack{
         ForEach(1...numberOfExercises, id:\.self){ index in
-          Button(action: {}){
+          Button(action: {
+            selectedTab = index
+          }){
             Text(String(index))
               .foregroundColor(selectedTab == index ? .red : .blue)
               .frame(width:25, height:25)
@@ -37,6 +38,6 @@ struct HeaderView: View {
 
 struct HeaderView_Previews: PreviewProvider {
   static var previews: some View {
-    HeaderView(title: "Exercise Name",numberOfExercises: Exercise.exercises.count, selectedTab: .constant(2))
+    HeaderView(selectedTab: .constant(2))
   }
 }
