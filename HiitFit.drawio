@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-18T16:20:45.935Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="CsBK8QezBa6sq_LMxSOx" version="22.1.11" type="device">
+<mxfile host="app.diagrams.net" modified="2023-12-18T22:06:15.078Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="t3hKjA7bNqih6RSQp3VU" version="22.1.11" type="device">
   <diagram name="Page-1" id="7_0zNEO4ABhEya6cI7uT">
     <mxGraphModel dx="1167" dy="778" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -49,7 +49,7 @@
         <mxCell id="rdZS-hr1h6BNbnmUe9tR-19" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="440" y="120" width="240" height="440" as="geometry" />
         </mxCell>
-        <mxCell id="rdZS-hr1h6BNbnmUe9tR-20" value="Exercise 1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+        <mxCell id="rdZS-hr1h6BNbnmUe9tR-20" value="Exercise x" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="530" y="80" width="90" height="30" as="geometry" />
         </mxCell>
         <mxCell id="rdZS-hr1h6BNbnmUe9tR-21" value="Contains : &lt;br&gt;&lt;ul&gt;&lt;li&gt;Header (title: Exercise name)&lt;/li&gt;&lt;li&gt;Dots (from 1 to exercices.length) with the current index selected&lt;/li&gt;&lt;li&gt;Video of the exercise&lt;/li&gt;&lt;li&gt;Button (label: Start)&lt;/li&gt;&lt;li&gt;Button (label: Done)&lt;/li&gt;&lt;li&gt;Button on the bottom (label: History)&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
