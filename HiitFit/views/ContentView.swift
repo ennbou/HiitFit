@@ -13,15 +13,11 @@ struct ContentView: View {
   
   var body: some View {
     VStack{
-      if(selectedTab > 0){
-        HeaderView(selectedTab: $selectedTab)
-      }
-      
       TabView(selection: $selectedTab){
         HomeScreen(selectedTab: $selectedTab)
           .tag(0)
         ForEach(0..<Exercise.exercises.count, id: \.self){ index in
-          ExerciseView(exercise: Exercise.exercises[index])
+          ExerciseView(exercise: Exercise.exercises[index], selectedTab: $selectedTab)
             .tag(index+1)
         }
       }

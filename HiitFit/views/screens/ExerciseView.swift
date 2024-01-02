@@ -16,11 +16,15 @@ struct ExerciseView: View {
   @State var exerciseVideo: String? = nil
   @State var isTimeCompleted: Bool = false
   @State var isStarted: Bool = false
+  @Binding var selectedTab: Int
+  
   let timer = Timer.publish(every: 1, on: .main, in: .default).autoconnect()
   
   var body: some View {
     GeometryReader{ geometry in
+       
       VStack{
+        HeaderView(selectedTab: $selectedTab)
         
         VideoPlayer(player: player)
           .frame(width: geometry.size.width, height: geometry.size.width)
@@ -71,6 +75,6 @@ struct ExerciseView: View {
 
 struct ExerciseView_Previews: PreviewProvider {
   static var previews: some View {
-    ExerciseView(exercise: Exercise.exercises.first ?? Exercise(name: .pushups))
+    ExerciseView(exercise: Exercise.exercises.first ?? Exercise(name: .pushups), selectedTab: .constant(1))
   }
 }
