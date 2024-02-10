@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D928805E2B44B46600B775D5 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D928805D2B44B46600B775D5 /* HistoryView.swift */; };
+		D92880612B44BA9400B775D5 /* HistoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92880602B44BA9400B775D5 /* HistoryStore.swift */; };
 		D966ADF82B33919500A626B7 /* AVPlayer+utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D966ADF72B33919500A626B7 /* AVPlayer+utils.swift */; };
 		D96F82002B30A4C60087BA31 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96F81FF2B30A4C60087BA31 /* Exercise.swift */; };
 		D96F82022B30A96C0087BA31 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96F82012B30A96C0087BA31 /* HeaderView.swift */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D928805D2B44B46600B775D5 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		D92880602B44BA9400B775D5 /* HistoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryStore.swift; sourceTree = "<group>"; };
 		D966ADF72B33919500A626B7 /* AVPlayer+utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVPlayer+utils.swift"; sourceTree = "<group>"; };
 		D96F81FF2B30A4C60087BA31 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		D96F82012B30A96C0087BA31 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
@@ -57,6 +61,7 @@
 			children = (
 				D96F82052B30C92D0087BA31 /* ExerciseView.swift */,
 				D96F82032B30ABA70087BA31 /* HomeScreen.swift */,
+				D928805D2B44B46600B775D5 /* HistoryView.swift */,
 			);
 			path = screens;
 			sourceTree = "<group>";
@@ -113,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				D96F81FF2B30A4C60087BA31 /* Exercise.swift */,
+				D92880602B44BA9400B775D5 /* HistoryStore.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -221,11 +227,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D96F82042B30ABA70087BA31 /* HomeScreen.swift in Sources */,
+				D928805E2B44B46600B775D5 /* HistoryView.swift in Sources */,
 				D96F82002B30A4C60087BA31 /* Exercise.swift in Sources */,
 				D96F82092B30E8090087BA31 /* ContentView.swift in Sources */,
 				D9823C862B20EC3900FB1A2B /* HiitFitApp.swift in Sources */,
 				D96F82022B30A96C0087BA31 /* HeaderView.swift in Sources */,
 				D966ADF82B33919500A626B7 /* AVPlayer+utils.swift in Sources */,
+				D92880612B44BA9400B775D5 /* HistoryStore.swift in Sources */,
 				D96F82062B30C92D0087BA31 /* ExerciseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,6 +363,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HiitFit/Preview Content\"";
+				DEVELOPMENT_TEAM = 28FTF4TDSB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -367,7 +376,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ennbou.swiftui.hiitfit.HiitFit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ennbou.swiftui.hiitfit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -383,6 +392,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HiitFit/Preview Content\"";
+				DEVELOPMENT_TEAM = 28FTF4TDSB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -395,7 +405,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ennbou.swiftui.hiitfit.HiitFit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ennbou.swiftui.hiitfit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

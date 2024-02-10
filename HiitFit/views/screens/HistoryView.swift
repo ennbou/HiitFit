@@ -8,11 +8,30 @@
 import SwiftUI
 
 struct HistoryView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+  
+  @ObservedObject var historyStore: HistoryStore
+  @Environment(\.dismiss) var dismiss
+  
+  var body: some View {
+    VStack{
+      Form{
+        ForEach(Array(historyStore.exercises.keys), id: \.self){ key in
+          Section(header: Text("\(key)")) {
+            ForEach(historyStore.exercises[key] ?? [], id: \.date){ exerciseDay in
+              Text("\(exerciseDay.exercise.name.rawValue)")
+            }
+          }
+        }
+      }
     }
+    Button(action: {
+      dismiss()
+    } ){
+      Text("Done")
+    }
+  }
 }
 
 #Preview {
-    HistoryView()
+  HistoryView(historyStore: HistoryStore())
 }

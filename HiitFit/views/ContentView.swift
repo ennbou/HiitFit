@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
   
   @State var selectedTab = 0
+  @StateObject var historyStore = HistoryStore()
   
   var body: some View {
     VStack{
@@ -21,13 +22,15 @@ struct ContentView: View {
             .tag(index+1)
         }
       }
-      .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+      .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
     }
+    .environmentObject(historyStore)
   }
 }
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
     ContentView()
+      .environmentObject(HistoryStore())
   }
 }

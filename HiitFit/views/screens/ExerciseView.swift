@@ -49,6 +49,7 @@ struct ExerciseView: View {
               if(time > 0){
                 time -= 1
               }else{
+                isTimeCompleted = true
                 timer.upstream.connect().cancel()
               }
             }.padding()

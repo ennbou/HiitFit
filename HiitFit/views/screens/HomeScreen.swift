@@ -53,7 +53,7 @@ struct HomeScreen: View {
       }){
         Text("History")
       }.sheet(isPresented: $historyIsPresented){
-        Text("History")
+        HistoryView(historyStore:  HistoryStore())
       }
       
     }
